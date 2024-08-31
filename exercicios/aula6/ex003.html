@@ -15,17 +15,16 @@
         }
     </style>
 </head>
-<body> <!-- O que ira aparecer no site -->
+<body> 
     <h1>Hello, World!</h1>
     <p>Já me livrei da maldição.</p>
-    <!-- O javascript vem logo antes do fechamento da tag body -->
-    <!-- Antigamente após todo comando em javascript era necessário um ponto e vírgula (;) mas atualmente não é mais obrigatório -->
-    <script>
-        window.alert('Minha primeira mensagem!')
-        /* Outra forma de escrever o comando acima seria: alert('Minha primeira mensagem') */
 
-        window.confirm('Está gostando de JS?')
-        window.prompt('Qual é seu nome?')
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número: ')) 
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + String(s)) // (number+number) para adição ou para  (string+string)concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual  a ${s}`) // a mesma coisa do window alert anterior sendo que usando o template strings
     </script>
 </body>
 </html>
