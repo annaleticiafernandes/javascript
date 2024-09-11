@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText vs innerHTML</title>
+</head>
+<body>
+    <h1>Diferença entre innerText e innerHTML</h1>
+    <p class="teste1"></p>
+    <p id="teste2"></p>
+
+    <script>
+        var variavel1 = document.querySelector('.teste1')
+        variavel1.innerText = 'Teste do <strong>innerText</strong>'
+
+        var variavel2 = document.querySelector('#teste2')
+        variavel2.innerHTML = 'Teste do <strong>innerHTML</strong>'
+    </script>
+</body>
+</html>
